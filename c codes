@@ -1,0 +1,20 @@
+SUM OF DIGITS OF A NUMBER USING RECURSION:
+
+#include <stdio.h> 
+int sum of digit(int n) 
+{ 
+    if (n == 0) 
+       return 0; 
+    return (n % 10 + sum_of_digit(n / 10)); 
+} 
+int main() 
+{ 
+    int num = 1234; 
+    int result = sum of digit(num); 
+    printf("Sum of digits in %d is %d\n", num, result); 
+    return 0; 
+} 
+
+OUTPUT:
+sum of digits: 10
+
